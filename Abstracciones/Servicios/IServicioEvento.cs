@@ -1,15 +1,18 @@
-﻿namespace Gestor_de_eventos.Abstracciones.Servicios
+﻿using Gestor_de_eventos.DTO.Evento;
+using Gestor_de_eventos.Modelos;
+
+namespace Gestor_de_eventos.Abstracciones.Servicios
 {
     public class IServicioEvento
     {
-        //List<EventoDTO> Get();
+        List<EventoDTO> Get();
 
-        //Evento GetById(int id);
+        Evento GetById(int id);
 
-        //EventoDTO Create(CrearEventoDTO crearEventoDTO);
+        EventoDTO Create(CrearEventoDTO crearEventoDTO);
 
-        //EventoDTO Update(int id, ActualizarEventoDTO actualizarEventoDTO);
+        EventoDTO Update(int id, ActualizarEventoDTO actualizarEventoDTO);
 
-        //void Delete(int id);
+        void Delete(int id);
     }
 }
