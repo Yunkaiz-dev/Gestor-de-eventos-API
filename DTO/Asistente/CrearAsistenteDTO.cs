@@ -8,6 +8,6 @@
 
         public string Telefono { get; set; } = null!;
 
-        public string Tipo { get; set; } = null!;
+        public string Correo { get; set; } = null!;
     }
 }

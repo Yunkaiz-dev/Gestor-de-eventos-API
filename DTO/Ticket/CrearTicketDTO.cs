@@ -4,7 +4,7 @@
     {
         public string TipoTicket { get; set; } = null!;
 
-        public DateTime FechaTicket { get; set; }
+        public DateTime? FechaTicket { get; set; }
 
         public decimal Precio { get; set; }
 
