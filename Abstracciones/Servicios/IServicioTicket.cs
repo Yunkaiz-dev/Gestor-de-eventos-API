@@ -4,15 +4,15 @@ using Gestor_de_eventos.Modelos;
 
 namespace Gestor_de_eventos.Abstracciones.Servicios
 {
-    public class IServicioTicket
+    public interface IServicioTicket
     {
-        List<AsistenteDTO> Get();
+        List<TicketDTO> Get();
 
-        Asistente GetById(int id);
+        Ticket GetById(int id);
 
-        AsistenteDTO Create(CrearAsistenteDTO crearAsistenteDTO);
+        TicketDTO Create(CrearTicketDTO crearTicketDTO);
 
-        AsistenteDTO Update(int id, ActualizarAsistenteDTO actualizarAsistenteDTO);
+        TicketDTO Update(int id, ActualizarTicketDTO actualizarTicketDTO);
 
         void Delete(int id);
     }

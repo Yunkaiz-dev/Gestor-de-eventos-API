@@ -8,13 +8,13 @@ namespace Gestor_de_eventos.Abstracciones.Repositorios
 {
     public interface IRepositorioEvento
     {
-        List<EventoDTO> Get();
+        List<Evento> Get();
 
         Evento GetById(int id);
 
-        EventoDTO Create(CrearEventoDTO crearEventoDTO);
+        Evento Create(CrearEventoDTO crearEventoDTO);
 
-        EventoDTO Update(int id, ActualizarEventoDTO actualizarEventoDTO);
+        Evento Update(int id, ActualizarEventoDTO actualizarEventoDTO);
 
         void Delete(int id);
     }

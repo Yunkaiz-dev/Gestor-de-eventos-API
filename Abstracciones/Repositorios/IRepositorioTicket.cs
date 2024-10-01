@@ -8,13 +8,13 @@ namespace Gestor_de_eventos.Abstracciones.Repositorios
 {
     public interface IRepositorioTicket
     {
-        List<TicketDTO> Get();
+        List<Ticket> Get();
 
         Ticket GetById(int id);
 
-        TicketDTO Create(CrearTicketDTO crearTicketDTO);
+        Ticket Create(CrearTicketDTO crearTicketDTO);
 
-        TicketDTO Update(int id, ActualizarTicketDTO actualizarTicketDTO);
+        Ticket Update(int id, ActualizarTicketDTO actualizarTicketDTO);
 
         void Delete(int id);
     }

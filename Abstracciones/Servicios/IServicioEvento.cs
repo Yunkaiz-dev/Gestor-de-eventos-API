@@ -3,7 +3,7 @@ using Gestor_de_eventos.Modelos;
 
 namespace Gestor_de_eventos.Abstracciones.Servicios
 {
-    public class IServicioEvento
+    public interface IServicioEvento
     {
         List<EventoDTO> Get();
 

@@ -8,13 +8,13 @@ namespace Gestor_de_eventos.Abstracciones.Repositorios
 {
     public interface IRepositorioAsistente
     {
-        List<AsistenteDTO> Get();
+        List<Asistente> Get();
 
         Asistente GetById(int id);
 
-        AsistenteDTO Create(CrearAsistenteDTO crearAsistenteDTO);
+        Asistente Create(CrearAsistenteDTO crearAsistenteDTO);
 
-        AsistenteDTO Update(int id, ActualizarAsistenteDTO actualizarAsistenteDTO);
+        Asistente Update(int id, ActualizarAsistenteDTO actualizarAsistenteDTO);
 
         void Delete(int id);
     }
