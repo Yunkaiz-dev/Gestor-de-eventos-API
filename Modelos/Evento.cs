@@ -13,13 +13,13 @@ public partial class Evento
 
     public string Nombre { get; set; } = null!;
 
-    public DateTime Fecha { get; set; }
+    public DateTime? Fecha { get; set; }
 
     public string Ubicacion { get; set; } = null!;
 
     public string Tipo { get; set; } = null!;
 
-    public decimal Capacidad { get; set; }
+    public decimal? Capacidad { get; set; }
 
     public string? Descripcion { get; set; }
 
