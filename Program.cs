@@ -23,6 +23,21 @@ builder.Services.AddScoped<IRepositorioEvento, RepositorioEvento>();
 builder.Services.AddScoped<IRepositorioTicket, RepositorioTicket>();
 builder.Services.AddScoped<IServicioTicket, ServicioTicket>();
 
+builder.Services.AddCors(options =>
+{
+    options.AddPolicy("PermitirTodo",
+        policy =>
+        {
+            policy.WithOrigins("http://localhost:5173")
+           .AllowAnyHeader()
+           .AllowAnyMethod()
+           .WithExposedHeaders("Access-Control-Allow-Origin", "Access-Control-Allow-Headers", "Access-Control-Allow-Methods")
+           .SetIsOriginAllowed(origin => true)
+           .AllowCredentials();
+
+        });
+});
+
 var app = builder.Build();
 
 // Configure the HTTP request pipeline.
@@ -33,6 +48,8 @@ if (app.Environment.IsDevelopment())
 }
 
 app.UseHttpsRedirection();
+
+app.UseCors("PermitirTodo");
 
 app.UseAuthorization();
 

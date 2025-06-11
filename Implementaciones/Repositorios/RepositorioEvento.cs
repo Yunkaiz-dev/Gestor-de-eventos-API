@@ -2,8 +2,7 @@
 using Gestor_de_eventos.DTO.Evento;
 using Gestor_de_eventos.Modelos;
 
-namespace Gestor_de_eventos.Implementaciones.Repositorios
-{
+namespace Gestor_de_eventos.Implementaciones.Repositorios{ }
     public class RepositorioEvento : IRepositorioEvento
     {
         private readonly GestorEventosContext _context;
@@ -66,4 +65,4 @@ namespace Gestor_de_eventos.Implementaciones.Repositorios
 
         
     }
-}
+
