@@ -22,7 +22,7 @@ public partial class GestorEventosContext : DbContext
     public virtual DbSet<Ticket> Tickets { get; set; }
 
     protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
-        => optionsBuilder.UseSqlServer("Server=MSI;Database=GestorEventos;User Id=sa;Password=0928;Encrypt=True;Trusted_Connection=True;TrustServerCertificate=True;");
+        => optionsBuilder.UseSqlServer("Server=DESKTOP-FB4KLNC;Database=GestorDeEventos;User Id=user;Password=0928;Encrypt=True;Trusted_Connection=True;TrustServerCertificate=True;");
 
     protected override void OnModelCreating(ModelBuilder modelBuilder)
     {
