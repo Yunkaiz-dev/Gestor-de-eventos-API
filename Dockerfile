@@ -24,4 +24,4 @@ EXPOSE 8080
 
 # El comando que Docker ejecutará para iniciar tu API
 # REEMPLAZA "TuProyectoAPI.dll" por el nombre real de tu archivo de salida (suele ser el mismo nombre de tu proyecto)
-ENTRYPOINT ["dotnet", "TuProyectoAPI.dll"]
+ENTRYPOINT ["dotnet", "gestor_de_eventos.dll"]
